@@ -1,0 +1,14 @@
+{
+    "library": "./index.js",
+    "staticDirs": {
+        "imgur": "public"
+    },
+    "hooks": [
+        { "hook": "static:app.load", "method": "init"},
+        { "hook": "filter:templates.get_config", "method": "modifyTemplateConfig"}
+    ],
+    "scripts": [
+		"public/scripts/client.js"
+	],
+    "templates": "./public/templates"
+}

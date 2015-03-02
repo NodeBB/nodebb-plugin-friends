@@ -1,0 +1,26 @@
+{
+  "name": "nodebb-plugin-friends",
+  "version": "0.0.1",
+  "description": "Frienship plugin ala facebook",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NodeBB/nodebb-plugin-friends"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "friends"
+  ],
+  "author": "Baris Usakli <baris@designcreateplay.com>",
+  "license": "MIT",
+  "dependencies": {
+    "async": "~0.9.0"
+  },
+  "nbbpm": {
+    "compatibility": "^0.6.0"
+  }
+}
