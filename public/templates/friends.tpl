@@ -7,8 +7,8 @@
 	<ul class="users-container pending-friends clearfix">
 		<!-- BEGIN pendingFriends -->
 		<li class="col-xs-2 registered-user">
-			<a class="h2w-friend-link" href="http://stg.h2-atkins.com/client/#/social/{pendingFriends.userslug}/profile"><img src="{pendingFriends.picture}" /></a><br />
-			<a class="h2w-friend-link" href="http://stg.h2-atkins.com/client/#/social/{pendingFriends.userslug}/profile">{pendingFriends.username}</a><br />
+			<a class="h2w-friend-link" href="{config.relative_path}/user/{pendingFriends.userslug}"><img src="{pendingFriends.picture}" /></a><br />
+			<a class="h2w-friend-link" href="{config.relative_path}/user/{pendingFriends.userslug}">{pendingFriends.username}</a><br />
 			
 			<button class="btn btn-success friend-button" data-uid="{pendingFriends.uid}" data-type="accept">Accept Friend Request</button>
 			<button class="btn btn-warning friend-button" data-uid="{pendingFriends.uid}" data-type="reject">Reject Friend Request</button>
