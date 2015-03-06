@@ -1,7 +1,14 @@
 # nodebb-plugin-friends
+
 Friendship plugin ala facebook
 
-Place the below template in user_list replacing the follow buttons.
+Replaces the default follow mechanic (ala Twitter) with a moderated friending system which allows users to approve/deny friend requests.
+
+
+## Optional
+
+If you want a friends button in the /users list, add the following in partials/users_list.tpl
+
 ```
 <!-- IF users.isFriends -->
 <button class="btn btn-link friend-button" data-uid="{users.uid}" data-type="unfriend" data-username="{users.username}">Remove Friend</button>
