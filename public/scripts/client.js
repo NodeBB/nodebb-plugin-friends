@@ -9,7 +9,6 @@ $(document).ready(function() {
 	$(window).on('action:ajaxify.contentLoaded', function(ev, data) {
 		if (data.url.match(/user\//)) {
 			var uid = $('[data-uid]').attr('data-uid');
-			$('#follow-btn').hide();
 
 			socket.emit('plugins.friends.areFriendsOrRequested', {uid: uid}, function(err, isFriend) {
 				if (isFriend[0]) {
