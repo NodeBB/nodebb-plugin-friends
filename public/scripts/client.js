@@ -36,8 +36,7 @@ $(document).ready(function() {
 			}
 
 			if (type === 'friend') {
-				btn.attr('data-type', 'unfriend')
-					.removeClass('btn-warning').addClass('btn-link').html('Remove Friend');
+				btn.attr('data-type', '').prop('disabled', true).html('Request Sent');
 			} else if (type === 'unfriend') {
 				btn.attr('data-type', 'friend')
 					.addClass('btn-warning').removeClass('btn-link').html('Add Friend');
