@@ -16,3 +16,19 @@ If you want a friends button in the /users list, add the following in partials/u
 <button class="btn btn-warning friend-button" data-uid="{users.uid}" data-type="friend" data-username="{users.username}">Add Friend</button>
 <!-- ENDIF users.isFriends -->
 ```
+
+
+## Integration with Write API
+
+If you have the [Write API Plugin](https://github.com/julianlam/nodebb-plugin-write-api) installed, the following routes are exposed for you to use:
+
+* `/friends/:userslug`
+    * `GET /`
+        * Retrieves all friendship-related data pertaining to the user specified via `userslug`, **including pending friendship data**
+        * Can only be called by an administrative account
+    * `POST /`
+        * Requests a friendship from user specified via `userslug`, or accepts a pending friendship, if one is outstanding
+        * Accepts: Nothing
+    * `DELETE /`
+        * Unfriends the user specified via `userslug` (relative to the calling user), or rejects a friendship request, if one is outstanding
+        * Accepts: Nothing
