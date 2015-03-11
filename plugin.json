@@ -4,8 +4,7 @@
         "imgur": "public"
     },
     "hooks": [
-        { "hook": "static:app.load", "method": "init"},
-        { "hook": "filter:templates.get_config", "method": "modifyTemplateConfig"}
+        { "hook": "static:app.load", "method": "init"}
     ],
     "scripts": [
 		"public/scripts/client.js"
