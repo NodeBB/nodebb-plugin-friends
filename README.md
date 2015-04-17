@@ -22,13 +22,13 @@ If you want a friends button in the /users list, add the following in partials/u
 
 If you have the [Write API Plugin](https://github.com/julianlam/nodebb-plugin-write-api) installed, the following routes are exposed for you to use:
 
-* `/friends/:userslug`
+* `/friends/:uid`
     * `GET /`
-        * Retrieves all friendship-related data pertaining to the user specified via `userslug`, **including pending friendship data**
+        * Retrieves all friendship-related data pertaining to the user specified via `uid`, **including pending friendship data**
         * Can only be called by an administrative account
     * `POST /`
         * Requests a friendship from user specified via `userslug`, or accepts a pending friendship, if one is outstanding
         * Accepts: Nothing
     * `DELETE /`
-        * Unfriends the user specified via `userslug` (relative to the calling user), or rejects a friendship request, if one is outstanding
+        * Unfriends the user specified via `uid` (relative to the calling user), or rejects a friendship request, if one is outstanding
         * Accepts: Nothing
