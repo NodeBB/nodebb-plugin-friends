@@ -7,7 +7,7 @@ $(document).ready(function() {
 	});
 
 	$(window).on('action:ajaxify.contentLoaded', function(ev, data) {
-		if (data.url.match(/user\//)) {
+		if (data.tpl === 'account') {
 			var uid = $('[data-uid]').attr('data-uid');
 
 			socket.emit('plugins.friends.areFriendsOrRequested', {uid: uid}, function(err, isFriend) {
