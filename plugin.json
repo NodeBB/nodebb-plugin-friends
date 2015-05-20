@@ -5,7 +5,8 @@
     },
     "hooks": [
         { "hook": "static:app.load", "method": "init"},
-        { "hook": "filter:plugin.write-api.routes", "method": "initWriteRoutes" }
+        { "hook": "filter:plugin.write-api.routes", "method": "initWriteRoutes" },
+        { "hook": "filter:user.following", "method": "listUids"}
     ],
     "scripts": [
 		"public/scripts/client.js"
