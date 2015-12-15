@@ -7,7 +7,13 @@
 	<ul class="users-container pending-friends clearfix">
 		<!-- BEGIN pendingFriends -->
 		<li class="col-xs-2 registered-user users-box">
-			<a class="h2w-friend-link" href="{config.relative_path}/user/{pendingFriends.userslug}"><img src="{pendingFriends.picture}" /></a><br />
+			<a class="h2w-friend-link" href="{config.relative_path}/user/{pendingFriends.userslug}">
+				<!-- IF ../picture -->
+				<img src="{pendingFriends.picture}" />
+				<!-- ELSE -->
+				<div class="avatar avatar-sm" style="background-color: {../icon:bgColor};">{../icon:text}</div>
+				<!-- ENDIF ../picture -->
+			</a><br />
 			<a class="h2w-friend-link" href="{config.relative_path}/user/{pendingFriends.userslug}">{pendingFriends.username}</a><br />
 
 			<button class="btn btn-sm btn-success friend-button btn-block" data-uid="{pendingFriends.uid}" data-type="accept">Accept</button>
