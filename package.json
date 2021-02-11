@@ -2,7 +2,7 @@
   "name": "nodebb-plugin-friends",
   "version": "1.2.2",
   "description": "Friendship plugin ala facebook",
-  "main": "index.js",
+  "main": "lib/library.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/NodeBB/nodebb-plugin-friends"
@@ -21,6 +21,6 @@
     "async": "~0.9.0"
   },
   "nbbpm": {
-    "compatibility": "^1.11.0"
+    "compatibility": "^1.15.0"
   }
 }

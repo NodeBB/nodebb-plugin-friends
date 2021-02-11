@@ -1,5 +1,4 @@
 {
-    "library": "./index.js",
     "staticDirs": {
         "imgur": "public"
     },
