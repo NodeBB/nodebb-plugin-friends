@@ -1,7 +1,9 @@
 {
-    "staticDirs": {
-        "imgur": "public"
-    },
+    "id": "nodebb-plugin-friends",
+    "name": "Friends",
+    "description": "Friendship plugin ala facebook",
+    "url": "https://github.com/Schamper/nodebb-plugin-poll",
+    "library": "lib/library.js",
     "hooks": [
         { "hook": "static:app.load", "method": "init"},
         { "hook": "filter:plugin.write-api.routes", "method": "initV1V2Routes" },
@@ -9,10 +11,10 @@
         { "hook": "filter:user.following", "method": "listUids"}
     ],
     "scripts": [
-		"public/scripts/client.js"
+		"public/client.js"
 	],
     "less": [
-        "./less/style.less"
+        "less/style.less"
     ],
-    "templates": "./public/templates"
+    "templates": "templates"
 }
