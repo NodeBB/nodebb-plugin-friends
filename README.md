@@ -11,9 +11,9 @@ If you want a friends button in the /users list, add the following in partials/u
 
 ```
 <!-- IF users.isFriends -->
-<button class="btn btn-link friend-button" data-uid="{users.uid}" data-type="unfriend" data-username="{users.username}">Remove Friend</button>
+<button class="btn btn-link friend-button" data-uid="{users.uid}" data-type="unfriend" data-username="{users.username}">[[plugin-friends:action.remove-friend]]</button>
 <!-- ELSE -->
-<button class="btn btn-warning friend-button" data-uid="{users.uid}" data-type="friend" data-username="{users.username}">Add Friend</button>
+<button class="btn btn-warning friend-button" data-uid="{users.uid}" data-type="friend" data-username="{users.username}">[[plugin-friends:action.add-friend]]</button>
 <!-- ENDIF users.isFriends -->
 ```
 
