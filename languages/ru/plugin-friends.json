@@ -1,0 +1,16 @@
+{
+  "friends": "Друзья",
+  "friends.not-found": "Друзей не найдено",
+  "pending-friends": "Заявки в друзья",
+  "pending-friends.accept": "Принять",
+  "pending-friends.reject": "Отклонить",
+  "pending-friends.no-requests": "Нет входящих запросов в друзья",
+  "action.add-friend": "Добавить в друзья",
+  "action.remove-friend": "Удалить из друзей",
+  "action.request-sent": "Запрос отправлен",
+  "error.already-friends": "Вы уже являетесь друзьями",
+  "error.friend-request-already-sent": "Запрос в друзья уже был отправлен",
+  "error.self-request": "Вы не можете отправлять запросы в друзья самому себе",
+  "error.no-friend-request": "Запрос не был найден",
+  "notification": "%1 хочет добавить вас в друзья"
+}

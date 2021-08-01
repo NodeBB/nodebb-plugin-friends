@@ -21,5 +21,6 @@
     "less": [
         "less/style.less"
     ],
+    "languages": "languages",
     "templates": "templates"
 }

@@ -15,9 +15,13 @@ $(document).ready(function () {
 				}
 
 				if (isFriend[0]) {
-					$('#follow-btn').after(' <button class="btn btn-link btn-sm friend-button" data-uid="' + uid + '" data-type="unfriend">Remove Friend</button>');
+					$('<button class="btn btn-link btn-sm friend-button" data-uid="' + uid + '" data-type="unfriend"></button>')
+						.translateText('[[plugin-friends:action.remove-friend]]')
+						.insertAfter($('#follow-btn'));
 				} else {
-					$('#follow-btn').after(' <button class="btn btn-warning btn-sm friend-button" data-uid="' + uid + '" data-type="friend">Add Friend</button>');
+					$('<button class="btn btn-warning btn-sm friend-button" data-uid="' + uid + '" data-type="friend"></button>')
+						.translateText('[[plugin-friends:action.add-friend]]')
+						.insertAfter($('#follow-btn'));
 				}
 
 				$('.friend-button').on('click', addFriendFunctionality);
@@ -40,11 +44,11 @@ $(document).ready(function () {
 
 			switch (type) {
 				case 'friend':
-					btn.attr('data-type', '').prop('disabled', true).html('Request Sent');
+					btn.attr('data-type', '').prop('disabled', true).translateText('[[plugin-friends:action.request-sent]]');
 					break;
 				case 'unfriend':
 					btn.attr('data-type', 'friend')
-						.addClass('btn-warning').removeClass('btn-link').html('Add Friend');
+						.addClass('btn-warning').removeClass('btn-link').translateText('[[plugin-friends:action.add-friend]]');
 					break;
 				case 'accept':
 					ajaxify.go('user/' + app.user.userslug + '/friends');
