@@ -6,9 +6,14 @@
     "library": "lib/library.js",
     "hooks": [
         { "hook": "static:app.load", "method": "init"},
+
+        { "hook": "filter:user.following", "method": "hooks.listUids" },
+        { "hook": "filter:userlist.get", "method": "hooks.getUsers" },
+        { "hook": "filter:user.profileMenu", "method": "hooks.addProfileLink" },
+        { "hook": "filter:account/profile.build", "method": "hooks.getUserAccount" },
+
         { "hook": "filter:plugin.write-api.routes", "method": "initV1V2Routes" },
-        { "hook": "static:api.routes", "method": "initV3Routes" },
-        { "hook": "filter:user.following", "method": "listUids"}
+        { "hook": "static:api.routes", "method": "initV3Routes" }
     ],
     "scripts": [
 		"public/client.js"
