@@ -1,0 +1,16 @@
+{
+  "friends": "Friends",
+  "friends.not-found": "No friends found",
+  "pending-friends": "Pending Friends",
+  "pending-friends.accept": "Accept",
+  "pending-friends.reject": "Reject",
+  "pending-friends.no-requests": "No pending friend requests",
+  "action.add-friend": "Add Friend",
+  "action.remove-friend": "Remove Friend",
+  "action.request-sent": "Request Sent",
+  "error.already-friends": "You're already friends",
+  "error.friend-request-already-sent": "Friend request already sent",
+  "error.self-request": "You can't send friend requests to yourself",
+  "error.no-friend-request": "Friend request wasn't found",
+  "notification": "%1 wants to be friends"
+}
