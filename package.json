@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-friends",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Friendship plugin ala facebook",
   "main": "lib/library.js",
   "repository": {
