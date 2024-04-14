@@ -1,0 +1,16 @@
+{
+  "friends": "Znajomi",
+  "friends.not-found": "Brak znajomych",
+  "pending-friends": "Oczekujący znajomi",
+  "pending-friends.accept": "Zaakceptuj",
+  "pending-friends.reject": "Odrzuć",
+  "pending-friends.no-requests": "Brak próśb o dodanie do listy",
+  "action.add-friend": "Dodaj znajomegod",
+  "action.remove-friend": "Usuń znajomego",
+  "action.request-sent": "Prośba przekazana",
+  "error.already-friends": "Już jesteście znajomymi",
+  "error.friend-request-already-sent": "Prośba została już przekazana",
+  "error.self-request": "Nie można wysłać zaproszenia do siebie samego",
+  "error.no-friend-request": "Nie odnaleziono prośby o dodanie do listy znajomych",
+  "notification": "%1 chcą dołączyć do znajomych"
+}
